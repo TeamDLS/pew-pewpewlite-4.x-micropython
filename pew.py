@@ -66,7 +66,7 @@ def keys():
     global _last_keys, _keys
 
     now = time.ticks_ms()
-    if time.ticks_diff(now, _last_keys) < 10:
+    if time.ticks_diff(now, _last_keys) < 20:
         return _keys
     _last_keys = now
 
